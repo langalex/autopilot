@@ -1,0 +1,58 @@
+/* Put your CSS here */
+html, body {
+  margin: 20px;
+  font-family: sans-serif;
+}
+
+.boat {
+  width: 45%;
+  display: inline-block;
+
+  .deck {
+    width: 97px;
+    margin: auto;
+    position: relative;
+
+    img {
+      height: 250px;
+    }
+
+    .rudder {
+      position: absolute;
+      -webkit-transform-origin: center top;
+      width: 2px;
+      height: 20px;
+      background: #C0362C;
+      top: 248px;
+    }
+
+    .rudder-left {
+      left: 20px;
+    }
+
+    .rudder-right {
+      left: 76px;
+    }
+  }
+}
+
+.instruments {
+  display: inline-block;
+  width: 45%;
+
+  label {
+    display: block;
+  }
+
+  input {
+    font-size: 2em;
+  }
+
+  input[readonly] {
+    color: gray;
+  }
+}
+
+@keyframes domChanged { from { background: yellow; } }
+@-webkit-keyframes domChanged { from { background: yellow; } }
+.ember-view { animation: domChanged 1s; -webkit-animation: domChanged 1s; }
