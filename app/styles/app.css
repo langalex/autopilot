@@ -3,6 +3,24 @@ html, body {
     margin: 20px;
 }
 
+.boat {
+  width: 45%;
+  display: inline-block;
+}
+
+.boat img.deck {
+  height: 250px;
+}
+
+.instruments {
+  display: inline-block;
+  width: 45%;
+}
+
+.instruments label {
+  display: block;
+}
+
 @keyframes domChanged { from { background: yellow; } }
 @-webkit-keyframes domChanged { from { background: yellow; } }
 .ember-view { animation: domChanged 1s; -webkit-animation: domChanged 1s; }

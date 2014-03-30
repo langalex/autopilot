@@ -1,5 +1,13 @@
-<ul>
-{{#each}}
-  <li>{{this}}</li>
-{{/each}}
-</ul>
+{{boat-deck bearing=bearing}}
+
+<div class="instruments">
+  <label>
+    Target Bearing<br>
+    {{input value=targetBearing type="number" min=0 max=360}}
+  </label>
+
+  <label>
+    Bearing<br>
+    {{input value=bearing type="number" min=0 max=360 readonly="readonly"}}
+  </label>
+</div>
