@@ -1,58 +1,47 @@
 /* Put your CSS here */
 html, body {
   margin: 20px;
-  font-family: sans-serif;
-}
+  font-family: sans-serif; }
 
 .boat {
   width: 45%;
-  text-align: center;
-  display: inline-block;
-}
-
-.boat .deck {
-  display: relative;
-}
-
-.boat .deck img {
-  height: 250px;
-}
-
-.boat .deck .rudder {
-  position: absolute;
-  -webkit-transform-origin: center top;
-  width: 2px;
-  height: 20px;
-  background: #C0362C;
-  top: 245px;
-}
-
-.boat .deck .rudder-left {
-  left: 160px;
-}
-
-.boat .deck .rudder-right {
-  left: 220px;
-}
-
+  display: inline-block; }
+  .boat .deck {
+    width: 97px;
+    margin: auto;
+    position: relative; }
+    .boat .deck img {
+      height: 250px; }
+    .boat .deck .rudder {
+      position: absolute;
+      -webkit-transform-origin: center top;
+      width: 2px;
+      height: 20px;
+      background: #C0362C;
+      top: 248px; }
+    .boat .deck .rudder-left {
+      left: 20px; }
+    .boat .deck .rudder-right {
+      left: 76px; }
 
 .instruments {
   display: inline-block;
-  width: 45%;
-}
+  width: 45%; }
+  .instruments label {
+    display: block; }
+  .instruments input {
+    font-size: 2em; }
+  .instruments input[readonly] {
+    color: gray; }
 
-.instruments label {
-  display: block;
-}
+@keyframes domChanged {
+  from {
+    background: yellow; } }
 
-.instruments  input {
-  font-size: 2em;
-}
+@-webkit-keyframes domChanged {
+  from {
+    background: yellow; } }
 
-.instruments input[readonly] {
-  color: gray;
-}
-
-@keyframes domChanged { from { background: yellow; } }
-@-webkit-keyframes domChanged { from { background: yellow; } }
-.ember-view { animation: domChanged 1s; -webkit-animation: domChanged 1s; }
+.ember-view {
+  animation: domChanged 1s;
+  -webkit-animation: domChanged 1s; }
