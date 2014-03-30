@@ -1,4 +1,4 @@
-{{boat-deck bearing=bearing}}
+{{boat-deck bearing=bearing rudderAngle=rudderAngle}}
 
 <div class="instruments">
   <label>
@@ -9,5 +9,10 @@
   <label>
     Bearing<br>
     {{input value=bearing type="number" min=0 max=360 readonly="readonly"}}
+  </label>
+
+  <label>
+    Rudder angle<br>
+    {{input value=rudderAngle type="number" readonly="readonly" min=-90 max=90}}
   </label>
 </div>

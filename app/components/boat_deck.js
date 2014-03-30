@@ -3,5 +3,8 @@ export default Ember.Component.extend({
   bearing: 0,
   bearingCss: function() {
     return "-webkit-transform: rotate(" + this.get('bearing') + 'deg);';
-  }.property('bearing')
+  }.property('bearing'),
+  rudderCss: function() {
+    return "-webkit-transform: rotate(" + (this.get('rudderAngle') * -1) + 'deg);';
+  }.property('rudderAngle')
 });

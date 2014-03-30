@@ -1,16 +1,40 @@
 /* Put your CSS here */
 html, body {
-    margin: 20px;
+  margin: 20px;
+  font-family: sans-serif;
 }
 
 .boat {
   width: 45%;
+  text-align: center;
   display: inline-block;
 }
 
-.boat img.deck {
+.boat .deck {
+  display: relative;
+}
+
+.boat .deck img {
   height: 250px;
 }
+
+.boat .deck .rudder {
+  position: absolute;
+  -webkit-transform-origin: center top;
+  width: 2px;
+  height: 20px;
+  background: #C0362C;
+  top: 245px;
+}
+
+.boat .deck .rudder-left {
+  left: 160px;
+}
+
+.boat .deck .rudder-right {
+  left: 220px;
+}
+
 
 .instruments {
   display: inline-block;
@@ -19,6 +43,14 @@ html, body {
 
 .instruments label {
   display: block;
+}
+
+.instruments  input {
+  font-size: 2em;
+}
+
+.instruments input[readonly] {
+  color: gray;
 }
 
 @keyframes domChanged { from { background: yellow; } }
