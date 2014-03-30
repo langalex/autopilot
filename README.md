@@ -18,3 +18,15 @@ Runs completely in the browser. To run:
 To build:
 
     ember build
+
+### Future Ideas
+
+* wind: changing direction, gusts
+* steer to wind angle
+* waves pushing the boat around
+* boat speed, influence of rudders, wind angle
+* angular momentum of the boat
+* preventing gybes/tacks
+* tacking, gybing
+* repeatable tests for autopilot behavior
+* sailing to waypoints
