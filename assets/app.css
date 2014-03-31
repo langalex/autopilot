@@ -15,6 +15,7 @@ html, body {
     .boat .deck .rudder {
       position: absolute;
       -webkit-transform-origin: center top;
+      transform-origin: center top;
       width: 2px;
       height: 20px;
       background: #C0362C;
